@@ -2,9 +2,7 @@ import os
 from typing import Literal
 from pydantic_settings import BaseSettings
 from pydantic import model_validator
-from app.utils.logging_config import setup_logging
-
-logger = setup_logging()
+from app.utils.logging_config import logger
 
 class Settings(BaseSettings):
     LOG_INFO_TO_LOGS_FILE: bool = False

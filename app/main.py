@@ -1,8 +1,6 @@
 from fastapi import FastAPI
 from app.scraper.route import scraper_router
-from app.utils.logging_config import setup_logging
-
-logger = setup_logging()
+from app.utils.logging_config import logger
 
 app = FastAPI(
     title="Scraper",
